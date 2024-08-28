@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 10%;
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 30vw;
+  list-style: none;
+}
+
+button {
+  width: 130px;
+  height: 30px;
+  border-radius: 60px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  font-size: 0, 5rem;
+  font-family: Poppins;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section img {
+  width: 40%;
+  height: auto;
+}
+section div {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+section div .title {
+  font-size: 2rem;
+  font-family: "Koh Santepheap";
+  padding: 0 100px 10px 0;
+  color: #232323;
+}
+section div p {
+  font-size: 0, 5rem;
+  font-family: Poppins;
+  padding: 0 0 20px 0;
+  color: #232323;
+}
+section div .about {
+  font-size: 1rem;
+  font-family: "Koh Santepheap";
+  color: #ff0000;
+}/*# sourceMappingURL=style.css.map */
