@@ -5,63 +5,238 @@
 }
 
 body {
-  margin: 0 10%;
+  width: 60vw;
+  margin: 0 auto;
 }
 
 header {
   display: flex;
-  padding: 20px;
-  justify-content: space-between;
+  width: 60vw;
+  height: 10vh;
+  margin: 0 auto;
+  justify-content: space-evenly;
   align-items: center;
+  position: fixed;
+  z-index: 1000;
+  background-color: #F8F5F2;
+  border-radius: 0 0 20px 20px;
 }
-
-ul {
+header .navCabecario ul {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 30vw;
-  list-style: none;
+  list-style-type: none;
 }
-
-button {
-  width: 130px;
-  height: 30px;
-  border-radius: 60px;
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  font-size: 0, 5rem;
+header .navCabecario ul li {
+  font-size: 1, 25rem;
   font-family: Poppins;
+  font-weight: 500;
+  color: #232323;
+}
+header .navCabecario ul li a {
+  text-decoration: none;
+  color: #232323;
 }
 
-section {
+.inicio {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  background-color: #2aa31a;
 }
-section img {
-  width: 40%;
+.inicio .sushi {
+  width: 30%;
   height: auto;
 }
-section div {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
-section div .title {
-  font-size: 2rem;
+.inicio h2 {
+  font-size: 3rem;
   font-family: "Koh Santepheap";
+  font-weight: 400;
   padding: 0 100px 10px 0;
   color: #232323;
 }
-section div p {
-  font-size: 0, 5rem;
-  font-family: Poppins;
+.inicio p {
+  font-size: 1.25rem;
+  font-family: "Poppins";
   padding: 0 0 20px 0;
   color: #232323;
 }
-section div .about {
-  font-size: 1rem;
+
+.sobreNos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sobreNos .noodle {
+  width: 50%;
+  height: auto;
+}
+.sobreNos .sobreNosTxt {
+  color: #ff0000;
+  font-family: "Koh Santepheap";
+  font-size: 2rem;
+}
+.sobreNos h2 {
+  font-size: 3rem;
+  font-family: "Koh Santepheap";
+  font-weight: 400;
+  padding: 0 100px 10px 0;
+  color: #232323;
+}
+.sobreNos p {
+  font-size: 1.25rem;
+  font-family: "Poppins";
+  padding: 0 0 20px 0;
+  color: #232323;
+}
+
+.popularesTxt {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 100px 0;
+  font-size: 2rem;
+  font-family: "Koh Santepheap";
+  font-weight: 400;
+  color: #232323;
+}
+
+.populares {
+  display: flex;
+  justify-content: space-evenly;
+}
+.populares div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+  background-color: #F8F5F2;
+  width: 30%;
+}
+.populares div img {
+  width: 70%;
+  position: relative;
+  top: -70px;
+}
+.populares div h3 {
+  margin: -30px 0px 20px 0px;
+  font-size: 2rem;
+  font-family: "Koh Santepheap";
+  font-weight: 400;
+  color: #232323;
+}
+.populares div p {
+  font-size: 1.25rem;
+  font-family: "Poppins";
+  padding: 0 0 20px 0;
+  color: #232323;
+}
+.populares div .preco {
+  font-size: 2rem;
+  font-family: "Koh Santepheap";
+  font-weight: bold;
+  padding: 0 0 10px 0;
+  color: #ff0000;
+}
+
+.comentarioTxt {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  font-size: 2rem;
+  font-family: "Koh Santepheap";
+  font-weight: 400;
+  color: #232323;
+}
+
+.comentarios {
+  display: flex;
+  justify-content: space-between;
+}
+.comentarios div {
+  width: 45%;
+  border-radius: 5%;
+  background-color: #F8F5F2;
+}
+.comentarios img {
+  width: 20%;
+  margin: 10px 0 20px 20px;
+}
+.comentarios h3 {
+  width: 80%;
+  display: flex;
+  margin: 10px 0 10px 20px;
+  font-size: 2rem;
+  font-family: "Koh Santepheap";
+  font-weight: 400;
+  color: #232323;
+}
+.comentarios p {
+  width: 70%;
+  margin: 10px 0 20px 20px;
+  font-size: 1.25rem;
+  font-family: "Poppins";
+  padding: 0 0 20px 0;
+  color: #232323;
+}
+.comentarios .avaliacao {
+  flex-direction: row;
+  width: 50%;
+  margin: -10px 0 10px 0px;
+}
+.comentarios .avaliacao img {
+  width: 10%;
+}
+
+.navFooter {
+  display: flex;
+  margin: 30px 0 30px 0;
+  gap: 100px;
+}
+.navFooter ul {
+  list-style-type: none;
+}
+.navFooter ul h2 {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
   font-family: "Koh Santepheap";
   color: #ff0000;
+}
+.navFooter ul a {
+  display: flex;
+  font-size: 1rem;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #232323;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.linhaFooter {
+  border: none;
+  height: 1px;
+  background-color: #F8F5F2;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 20 0;
+  padding: 0 50px 0 50px;
+}
+
+button {
+  width: 207px;
+  height: 54px;
+  border-radius: 60px;
+  padding: 12px 40px 12px 40px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  font-size: 1, 25rem;
+  font-family: Poppins;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
