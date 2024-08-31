@@ -1,3 +1,28 @@
+@mixin titulo {
+    font-size: 2.5rem;
+    font-family: "Koh Santepheap", sans-serif;
+    font-weight: 500;
+    color: #232323;
+}
+@mixin subTitulo {
+    font-size: 1.5rem;
+    font-family: "Koh Santepheap", sans-serif;
+    font-weight: 500;
+    color: #232323;
+}
+@mixin paragrafo {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #232323;
+}
+@mixin efeitoZoom {
+    transition: transform 0.3s ease-in-out; // Transição para transformação
+    &:hover {
+        transform: scale(1.15); // Aumenta o tamanho do botão
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,19 +32,35 @@
 body{
     width: 60vw;
     margin: 0 auto;
+    
+}
+
+button{
+    @include efeitoZoom();
+    border-radius:60px;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    font-size: 1,25rem;
+    font-family: Poppins;
+    &:active {
+        transform: scale(0.9); // Reduz o tamanho do botão ao clicar
+    }
 }
 
 header{
     display: flex;
     width: 60vw;
     height: 10vh;
-    margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
+    top: 0;
     z-index: 1000;
     background-color: #F8F5F2;
     border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
 
     .navCabecario{
         ul{
@@ -27,17 +68,14 @@ header{
             justify-content: space-between;
             width: 30vw;
             list-style-type: none;
-    
+            
             li{
-                font-size: 1,25rem;
-                font-family: Poppins;
-                font-weight: 500;
-                color: #232323;
-                
-                a{
-                    text-decoration: none;
-                    color: #232323;
-                }
+                @include efeitoZoom();
+            }
+
+            a{
+                text-decoration: none;
+                @include paragrafo();
             }
         }
     }
@@ -45,80 +83,80 @@ header{
 
 .inicio{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    background-color: #2aa31a;
+    margin-top: 50px; 
+    
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 50%;
+        gap: 20px;
+    }
     
     .sushi{
         width: 30%;
-        height: auto;
     }
 
     h2{
-        font-size: 3rem;
-        font-family: "Koh Santepheap";
-        font-weight: 400;
-        padding: 0 100px 10px 0;
-        color: #232323;
-        
+        @include titulo();
     }
 
     p{
-        font-size: 1.25rem;
-        font-family: "Poppins";
-        padding: 0 0 20px 0;
-        color: #232323;
+       @include subTitulo();
+       width: 90%;
     }
 }
 
 .sobreNos{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 50px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 50%;
+        gap: 20px;
+        
+    }
     
     .noodle{
-        width: 50%;
-        height: auto;
+        width: 45%;
     }
 
     .sobreNosTxt{
+        @include subTitulo();
         color: #ff0000;
-        font-family: "Koh Santepheap";
-        font-size: 2rem;
     }
 
     h2{
-        font-size: 3rem;
-        font-family: "Koh Santepheap";
-        font-weight: 400;
-        padding: 0 100px 10px 0;
-        color: #232323;
+        @include titulo();
+        width: 60%;
         
     }
 
     p{
-        font-size: 1.25rem;
-        font-family: "Poppins";
-        padding: 0 0 20px 0;
-        color: #232323;
+        @include paragrafo();
+        width: 74%;
     }
     
 }
 
 .popularesTxt{
+    @include titulo();
     display: flex;
     justify-content: center;
-    margin: 50px 0 100px 0;
-    font-size: 2rem;
-    font-family: "Koh Santepheap";
-    font-weight: 400;
-    color: #232323;
+    margin: 100px 0;
 }
 
 .populares{
     display: flex;
-    
     justify-content: space-evenly;
+    margin-top: 50px;
     
     div{
         display: flex;
@@ -128,34 +166,37 @@ header{
         border-radius: 5%;
         background-color: #F8F5F2;
         width: 30%;
+        gap: 20px;
+        
+
+        
         
         img{
+            @include efeitoZoom();
             width: 70%;
             position: relative;
             top: -70px;
+            margin-bottom: -50px;
         }
         
         h3{
-            margin: -30px 0px 20px 0px ;
-            font-size: 2rem;
-            font-family: "Koh Santepheap";
-            font-weight: 400;
-            color: #232323;
+            @include subTitulo();
+            font-size: 1.8rem;
+            width: 100%;
+            
         }
 
         p{
-            font-size: 1.25rem;
-            font-family: "Poppins";
-            padding: 0 0 20px 0;
-            color: #232323;
+            @include paragrafo();
+            width: 80%;
+            
+
         }
         
         .preco{
-            font-size: 2rem;
-            font-family: "Koh Santepheap";
-            font-weight: bold;
-            padding: 0 0 10px 0;
-            color: #ff0000;     
+            @include subTitulo();
+            color: #ff0000; 
+            margin-bottom: 20px  
             
         }
         
@@ -164,58 +205,56 @@ header{
 }
 
 .comentarioTxt{
+    @include titulo();
     display: flex;
     justify-content: center;
-    margin: 20px 0 20px 0;
-    font-size: 2rem;
-    font-family: "Koh Santepheap";
-    font-weight: 400;
-    color: #232323;
-    
+    margin: 50px 0;
 }
 
 .comentarios{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
     
-    div{
-        
-        width: 45%;
+    div{ 
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        width: 50%;
         border-radius: 5%;
         background-color: #F8F5F2;
-        
-        
+        gap: 20px;
+        padding-left: 20px;
     }
     
-    img{
-        width: 20%;
-        margin: 10px 0 20px 20px;
+    .fotoAvaliacao{
+        width: 25%;
+        margin: 10px;
     }
     
     h3{
+        @include subTitulo();
         width: 80%;
-        display: flex;
-        margin: 10px 0 10px 20px;
-        font-size: 2rem;
-        font-family: "Koh Santepheap";
-        font-weight: 400;
-        color: #232323;
     }
 
     p{
+        @include paragrafo();
+        width: 55%;
+        
+    }
+    
+    .paragrafoRicardo{
+        @include paragrafo();
         width: 70%;
-        margin: 10px 0 20px 20px;
-        font-size: 1.25rem;
-        font-family: "Poppins";
-        padding: 0 0 20px 0;
-        color: #232323;
     }
     
     
-    .avaliacao{
+    .estrelas{
+        display: flex;
         flex-direction: row;
+        gap: 10px;
         width: 50%;
-        margin: -10px 0 10px 0px;
+        margin-bottom: 20px;
+        padding: 0;
         
         img{
             width: 10%;
@@ -227,29 +266,22 @@ header{
 
 .navFooter{
     display: flex;
-    margin: 30px 0 30px 0;
-    gap: 100px;
+    margin: 30px 0;
+    gap: 150px;
     
     ul{
         list-style-type: none;
         
         h2{
-            display: flex;
-            margin-bottom: 10px;
-            font-size: 1.25rem;
-            font-family: "Koh Santepheap";
-            color: #ff0000;
-            
-            
-            
+            @include subTitulo();
+            color: #ff0000;  
+            padding-bottom: 10px
         }
         
         a{
+            @include paragrafo();
+            @include efeitoZoom();
             display: flex;
-            font-size: 1rem;
-            font-family: "Poppins";
-            font-weight: 400;
-            color: #232323;
             text-decoration: none;
             padding-bottom: 10px;
         }
@@ -269,18 +301,13 @@ footer{
     align-items: center;
     margin: 50px 0 20 0;
     padding: 0 50px 0 50px;
+
+    nav img{
+        @include efeitoZoom();
+    }
     
 }
 
-button{
-    width: 207px;
-    height: 54px;
-    border-radius:60px;
-    padding: 12px 40px 12px 40px;
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    font-size: 1,25rem;
-    font-family: Poppins;
-    font-weight: 500;
-}
+#inicio, #sobreNos, #populares {
+    scroll-margin-top: 10vh;
+  }
