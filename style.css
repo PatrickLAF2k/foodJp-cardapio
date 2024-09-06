@@ -8,6 +8,11 @@ body {
   width: 60vw;
   margin: 0 auto;
 }
+@media (max-width: 576px) {
+  body {
+    width: 90vw;
+  }
+}
 
 button {
   transition: transform 0.3s ease-in-out;
@@ -35,9 +40,26 @@ header {
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: #F8F5F2;
+  background-color: #f8f5f2;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+    position: relative;
+    top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  header img {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  header .navCabecario {
+    display: none;
+  }
 }
 header .navCabecario ul {
   display: flex;
@@ -65,6 +87,11 @@ header .navCabecario ul a {
   align-items: center;
   margin-top: 50px;
 }
+@media (max-width: 576px) {
+  .inicio {
+    flex-direction: column-reverse;
+  }
+}
 .inicio div {
   display: flex;
   flex-direction: column;
@@ -72,8 +99,18 @@ header .navCabecario ul a {
   width: 50%;
   gap: 20px;
 }
+@media (max-width: 576px) {
+  .inicio div {
+    width: 100%;
+  }
+}
 .inicio .sushi {
   width: 30%;
+}
+@media (max-width: 576px) {
+  .inicio .sushi {
+    width: 60%;
+  }
 }
 .inicio h2 {
   font-size: 2.5rem;
@@ -81,12 +118,17 @@ header .navCabecario ul a {
   font-weight: 500;
   color: #232323;
 }
+@media (max-width: 576px) {
+  .inicio h2 {
+    font-size: 2.2rem;
+  }
+}
 .inicio p {
-  font-size: 1.5rem;
-  font-family: "Koh Santepheap", sans-serif;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #232323;
-  width: 90%;
+  width: 100%;
 }
 
 .sobreNos {
@@ -95,6 +137,12 @@ header .navCabecario ul a {
   align-items: center;
   margin-top: 50px;
 }
+@media (max-width: 576px) {
+  .sobreNos {
+    width: 100%;
+    flex-direction: column;
+  }
+}
 .sobreNos div {
   display: flex;
   flex-direction: column;
@@ -102,8 +150,18 @@ header .navCabecario ul a {
   width: 50%;
   gap: 20px;
 }
+@media (max-width: 576px) {
+  .sobreNos div {
+    width: 90%;
+  }
+}
 .sobreNos .noodle {
   width: 45%;
+}
+@media (max-width: 576px) {
+  .sobreNos .noodle {
+    width: 90%;
+  }
 }
 .sobreNos .sobreNosTxt {
   font-size: 1.5rem;
@@ -119,12 +177,17 @@ header .navCabecario ul a {
   color: #232323;
   width: 60%;
 }
+@media (max-width: 576px) {
+  .sobreNos h2 {
+    width: 100%;
+  }
+}
 .sobreNos p {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #232323;
-  width: 74%;
+  width: 100%;
 }
 
 .popularesTxt {
@@ -136,11 +199,22 @@ header .navCabecario ul a {
   justify-content: center;
   margin: 100px 0;
 }
+@media (max-width: 576px) {
+  .popularesTxt {
+    margin: 30px 0;
+  }
+}
 
 .populares {
   display: flex;
   justify-content: space-evenly;
   margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .populares {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .populares div {
   display: flex;
@@ -148,9 +222,15 @@ header .navCabecario ul a {
   align-items: center;
   text-align: center;
   border-radius: 5%;
-  background-color: #F8F5F2;
+  background-color: #f8f5f2;
   width: 30%;
   gap: 20px;
+}
+@media (max-width: 576px) {
+  .populares div {
+    width: 90%;
+    margin: 50px 0;
+  }
 }
 .populares div img {
   transition: transform 0.3s ease-in-out;
@@ -182,7 +262,6 @@ header .navCabecario ul a {
   font-family: "Koh Santepheap", sans-serif;
   font-weight: 500;
   color: #232323;
-  color: #ff0000;
   margin-bottom: 20px;
 }
 
@@ -200,15 +279,25 @@ header .navCabecario ul a {
   display: flex;
   gap: 50px;
 }
+@media (max-width: 576px) {
+  .comentarios {
+    flex-direction: column;
+  }
+}
 .comentarios div {
   display: flex;
   flex-direction: column;
   align-items: baseline;
   width: 50%;
   border-radius: 5%;
-  background-color: #F8F5F2;
+  background-color: #f8f5f2;
   gap: 20px;
   padding-left: 20px;
+}
+@media (max-width: 576px) {
+  .comentarios div {
+    width: 100%;
+  }
 }
 .comentarios .fotoAvaliacao {
   width: 25%;
@@ -228,12 +317,22 @@ header .navCabecario ul a {
   color: #232323;
   width: 55%;
 }
+@media (max-width: 576px) {
+  .comentarios p {
+    width: 100%;
+  }
+}
 .comentarios .paragrafoRicardo {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #232323;
   width: 70%;
+}
+@media (max-width: 576px) {
+  .comentarios .paragrafoRicardo {
+    width: 100%;
+  }
 }
 .comentarios .estrelas {
   display: flex;
@@ -250,10 +349,23 @@ header .navCabecario ul a {
 .navFooter {
   display: flex;
   margin: 30px 0;
-  gap: 150px;
+  justify-content: space-around;
+}
+@media (max-width: 576px) {
+  .navFooter {
+    width: 90vw;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 .navFooter ul {
   list-style-type: none;
+}
+@media (max-width: 576px) {
+  .navFooter ul {
+    width: 50%;
+  }
 }
 .navFooter ul h2 {
   font-size: 1.5rem;
@@ -280,7 +392,7 @@ header .navCabecario ul a {
 .linhaFooter {
   border: none;
   height: 1px;
-  background-color: #F8F5F2;
+  background-color: #f8f5f2;
 }
 
 footer {
@@ -291,6 +403,12 @@ footer {
   margin: 50px 0 20 0;
   padding: 0 50px 0 50px;
 }
+@media (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 footer nav img {
   transition: transform 0.3s ease-in-out;
 }
@@ -298,6 +416,8 @@ footer nav img:hover {
   transform: scale(1.15);
 }
 
-#inicio, #sobreNos, #populares {
+#inicio,
+#sobreNos,
+#populares {
   scroll-margin-top: 10vh;
 }/*# sourceMappingURL=style.css.map */
