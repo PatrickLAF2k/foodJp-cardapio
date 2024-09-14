@@ -2,170 +2,172 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
-    <title>Food-JP</title>
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+  <title>Food-JP</title>
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 
 </head>
 
 <body>
-    <header>
-      <img src="./assets/logo.png" alt="Logo FoodJp" class="logo" />
-  
-      <nav class="navCabecario">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobreNos">Sobre nós</a></li>
-          <li><a href="#populares">Populares</a></li>
-        </ul>
-      </nav>
-  
-      <button>Baixar o App</button>
-    </header>
-  
-    <main>
-      <section class="inicio" id="inicio">
-        <!--Inicio-->
-        <div>
-          <h2>Comida Oriental</h2>
-          <p>A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
-          <button>Ver o cardapio</button>
+  <header>
+    <img src="./assets/logo.png" alt="Logo FoodJp" class="logo" />
+
+    <nav class="navCabecario">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobreNos">Sobre nós</a></li>
+        <li><a href="#populares">Populares</a></li>
+      </ul>
+    </nav>
+
+    <button>Baixar o App</button>
+  </header>
+
+  <main>
+    <section class="inicio" id="inicio">
+      <!--Inicio-->
+      <div>
+        <h2>Comida Oriental</h2>
+        <p>A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e
+          ingredientes frescos.</p>
+
+        <button onclick="abrirCardapio()">Ver Cardápio</button>
+
+      </div>
+
+      <img class="sushi" src="./assets/sushi com hashi.png" alt="Foto de sushi" />
+    </section>
+
+    <section id="sobreNos" class="sobreNos">
+      <!--Sobre nos-->
+      <img class="noodle" src="./assets/img segurando prato.png" alt="Bowl de comida" />
+
+      <div>
+        <h3 class="sobreNosTxt">Sobre nós</h3>
+        <h2>Feita de forma tradicional</h2>
+        <p>Cada prato "feita de forma tradicional" é uma ode à excelência. Desde o meticuloso corte do sashimi até a
+          preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão.</p>
+      </div>
+    </section>
+
+    <h1 id="populares" class="popularesTxt">Populares</h1>
+
+    <section class="populares">
+      <!--Populares-->
+
+      <div>
+        <img src="./assets/noodle branco.png" alt="Bowl branco com macarrão" />
+        <h3>Ramen de frango</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="preco">R$ 30</p>
+      </div>
+
+      <div>
+        <img src="./assets/noodle preto.png" alt="Bowl preto com macarrão" />
+        <h3>Ramen apimentado</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="preco">R$ 30</p>
+      </div>
+
+      <div>
+        <img src="./assets/noodle bege.png" alt="Bowl bege com macarrão" />
+        <h3>Ramen tradicional</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p class="preco">R$ 30</p>
+      </div>
+    </section>
+
+    <h1 class="comentarioTxt">Comentários</h1>
+
+    <section class="comentarios">
+      <!--Comentarios-->
+      <div>
+        <img class="fotoAvaliacao" src="./assets/img profile 1.png" alt="Foto de muma mulher" />
+        <h3>Daniele Almeida</h3>
+        <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+
+        <div class="estrelas">
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
         </div>
-  
-        <img class="sushi" src="./assets/sushi com hashi.png" alt="Foto de sushi" />
-      </section>
-  
-      <section id="sobreNos" class="sobreNos" >
-        <!--Sobre nos-->
-        <img  class="noodle" src="./assets/img segurando prato.png" alt="Bowl de comida" />
-  
-        <div>
-          <h3 class="sobreNosTxt">Sobre nós</h3>
-          <h2>Feita de forma tradicional</h2>
-          <p>Cada prato "feita de forma tradicional" é uma ode à excelência. Desde o meticuloso corte do sashimi até a preparação delicada do sushi, cada etapa é uma reverência à herança culinária do Japão.</p>
+      </div>
+
+      <div>
+        <img class="fotoAvaliacao" src="./assets/img profile 2.png" alt="Foto de um homem" />
+        <h3>Ricardo França</h3>
+        <p class="paragrafoRicardo">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+
+        <div class="estrelas">
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
+          <img src="./assets/Star.png" alt="Estrela vermelha" />
         </div>
-      </section>
-  
-      <h1 id="populares" class="popularesTxt">Populares</h1>
-  
-      <section class="populares">
-        <!--Populares-->
-  
-        <div>
-          <img src="./assets/noodle branco.png" alt="Bowl branco com macarrão" />
-          <h3>Ramen de frango</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="preco">R$ 30</p>
-        </div>
-  
-        <div>
-          <img src="./assets/noodle preto.png" alt="Bowl preto com macarrão" />
-          <h3>Ramen apimentado</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="preco">R$ 30</p>
-        </div>
-  
-        <div>
-          <img src="./assets/noodle bege.png" alt="Bowl bege com macarrão" />
-          <h3>Ramen tradicional</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          <p class="preco">R$ 30</p>
-        </div>
-      </section>
-  
-      <h1 class="comentarioTxt">Comentários</h1>
-  
-      <section class="comentarios">
-        <!--Comentarios-->
-        <div>
-          <img class="fotoAvaliacao" src="./assets/img profile 1.png" alt="Foto de muma mulher" />
-          <h3>Daniele Almeida</h3>
-          <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
-  
-          <div class="estrelas">
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-          </div>
-        </div>
-  
-        <div>
-          <img class="fotoAvaliacao" src="./assets/img profile 2.png" alt="Foto de um homem" />
-          <h3>Ricardo França</h3>
-          <p class="paragrafoRicardo">Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
-  
-          <div class="estrelas">
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-            <img src="./assets/Star.png" alt="Estrela vermelha" />
-          </div>
-        </div>
-      </section>
-  
-      <nav class="navFooter">
-        <ul>
-          <h2>Produto</h2>
-          <li><a href="#">Todos</a></li>
-          <li><a href="#">Sushi</a></li>
-          <li><a href="#">Premium</a></li>
-        </ul>
-        <ul>
-          <h2>Infomações</h2>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Suporte</a></li>
-        </ul>
-        <ul>
-          <h2>Empresa</h2>
-          <li><a href="#">Sobre nós</a></li>
-          <li><a href="#">Local</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-        <ul>
-          <h2>Social</h2>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Twitter</a></li>
-        </ul>
-      </nav>
-    </main>
-  
-    <hr class="linhaFooter" />
-  
-    <footer>
-      <img src="./assets/logo.png" alt="" />
-  
-      <nav>
-        <ul>
-          <il
-            ><a href="#"><img src="./assets/face.png" alt="Logo facebook" /></a
-          ></il>
-          <il
-            ><a href="#"><img src="./assets/insta.png" alt="Logo instagram" /></a
-          ></il>
-          <il
-            ><a href="#"><img src="./assets/twwiter X.png" alt="Logo twitter" /></a
-          ></il>
-        </ul>
-      </nav>
-    </footer>
-  </body>
-  
+      </div>
+    </section>
+
+    <nav class="navFooter">
+      <ul>
+        <h2>Produto</h2>
+        <li><a href="#">Todos</a></li>
+        <li><a href="#">Sushi</a></li>
+        <li><a href="#">Premium</a></li>
+      </ul>
+      <ul>
+        <h2>Infomações</h2>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Suporte</a></li>
+      </ul>
+      <ul>
+        <h2>Empresa</h2>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Local</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <ul>
+        <h2>Social</h2>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <hr class="linhaFooter" />
+
+  <footer>
+    <img src="./assets/logo.png" alt="" />
+
+    <nav>
+      <ul>
+        <il><a href="#"><img src="./assets/face.png" alt="Logo facebook" /></a></il>
+        <il><a href="#"><img src="./assets/insta.png" alt="Logo instagram" /></a></il>
+        <il><a href="#"><img src="./assets/twwiter X.png" alt="Logo twitter" /></a></il>
+      </ul>
+    </nav>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
 
 </html>
