@@ -8,7 +8,7 @@
   font-size: 1.5rem;
   font-family: "Koh Santepheap", sans-serif;
   font-weight: 500;
-  color: #232323;
+  color: #ff0000;
 }
 @mixin paragrafo {
   font-size: 1rem;
@@ -27,6 +27,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body {
@@ -38,7 +40,7 @@ body {
   }
 }
 
-button {
+.botao {
   @include efeitoZoom();
   border-radius: 60px;
   padding: 10px 20px;
@@ -86,14 +88,12 @@ header {
       display: flex;
       justify-content: space-between;
       width: 30vw;
-      list-style-type: none;
 
       li {
         @include efeitoZoom();
       }
 
       a {
-        text-decoration: none;
         @include paragrafo();
       }
     }
@@ -249,12 +249,12 @@ header {
       @include paragrafo();
       width: 80%;
     }
-
-    .preco {
-      @include subTitulo();
-      margin-bottom: 20px;
-    }
   }
+}
+
+.preco {
+  @include subTitulo();
+  margin-bottom: 20px;
 }
 
 .comentarioTxt {
@@ -311,8 +311,8 @@ header {
     width: 70%;
 
     @media (max-width: 576px) {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 
   .estrelas {
@@ -342,8 +342,6 @@ header {
   }
 
   ul {
-    list-style-type: none;
-
     @media (max-width: 576px) {
       width: 50%;
     }
@@ -358,7 +356,7 @@ header {
       @include paragrafo();
       @include efeitoZoom();
       display: flex;
-      text-decoration: none;
+
       padding-bottom: 10px;
     }
   }
@@ -390,6 +388,9 @@ footer {
 
 #inicio,
 #sobreNos,
+#ramen,
+#kare,
+#daifuku,
 #populares {
   scroll-margin-top: 10vh;
 }
