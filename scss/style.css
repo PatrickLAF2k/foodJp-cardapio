@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  width: 60vw;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  body {
+    width: 90vw;
+  }
+}
+
+.botao {
+  transition: transform 0.3s ease-in-out;
+  border-radius: 60px;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  font-family: Poppins;
+}
+.botao:hover {
+  transform: scale(1.15);
+}
+.botao:active {
+  transform: scale(0.9);
+}
+
+header {
+  display: flex;
+  width: 60vw;
+  height: 10vh;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #f8f5f2;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+    position: relative;
+    top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  header img {
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  header .navCabecario {
+    display: none;
+  }
+}
+header .navCabecario ul {
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+}
+header .navCabecario ul li {
+  transition: transform 0.3s ease-in-out;
+}
+header .navCabecario ul li:hover {
+  transform: scale(1.15);
+}
+header .navCabecario ul a {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .inicio {
+    flex-direction: column-reverse;
+  }
+}
+.inicio div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 50%;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .inicio div {
+    width: 100%;
+  }
+}
+.inicio .sushi {
+  width: 30%;
+}
+@media (max-width: 576px) {
+  .inicio .sushi {
+    width: 60%;
+  }
+}
+.inicio h2 {
+  font-size: 2.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #232323;
+}
+@media (max-width: 576px) {
+  .inicio h2 {
+    font-size: 2.2rem;
+  }
+}
+.inicio p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 100%;
+}
+
+.sobreNos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .sobreNos {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.sobreNos div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 50%;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .sobreNos div {
+    width: 90%;
+  }
+}
+.sobreNos .noodle {
+  width: 45%;
+}
+@media (max-width: 576px) {
+  .sobreNos .noodle {
+    width: 90%;
+  }
+}
+.sobreNos .sobreNosTxt {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  color: #ff0000;
+}
+.sobreNos h2 {
+  font-size: 2.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 60%;
+}
+@media (max-width: 576px) {
+  .sobreNos h2 {
+    width: 100%;
+  }
+}
+.sobreNos p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 100%;
+}
+
+.popularesTxt {
+  font-size: 2.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+@media (max-width: 576px) {
+  .popularesTxt {
+    margin: 30px 0;
+  }
+}
+
+.populares {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+@media (max-width: 576px) {
+  .populares {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.populares div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+  background-color: #f8f5f2;
+  width: 30%;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .populares div {
+    width: 90%;
+    margin: 50px 0;
+  }
+}
+.populares div img {
+  transition: transform 0.3s ease-in-out;
+  width: 70%;
+  position: relative;
+  top: -70px;
+  margin-bottom: -50px;
+}
+.populares div img:hover {
+  transform: scale(1.15);
+}
+.populares div h3 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  font-size: 1.8rem;
+  width: 100%;
+}
+.populares div p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 80%;
+}
+.populares .preco {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.comentarioTxt {
+  font-size: 2.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.comentarios {
+  display: flex;
+  gap: 50px;
+}
+@media (max-width: 576px) {
+  .comentarios {
+    flex-direction: column;
+  }
+}
+.comentarios div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 50%;
+  border-radius: 5%;
+  background-color: #f8f5f2;
+  gap: 20px;
+  padding-left: 20px;
+}
+@media (max-width: 576px) {
+  .comentarios div {
+    width: 100%;
+  }
+}
+.comentarios .fotoAvaliacao {
+  width: 25%;
+  margin: 10px;
+}
+.comentarios h3 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  width: 80%;
+}
+.comentarios p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 55%;
+}
+@media (max-width: 576px) {
+  .comentarios p {
+    width: 100%;
+  }
+}
+.comentarios .paragrafoRicardo {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 70%;
+}
+@media (max-width: 576px) {
+  .comentarios .paragrafoRicardo {
+    width: 100%;
+  }
+}
+.comentarios .estrelas {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.comentarios .estrelas img {
+  width: 10%;
+}
+
+.navFooter {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-around;
+}
+@media (max-width: 576px) {
+  .navFooter {
+    width: 90vw;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 576px) {
+  .navFooter ul {
+    width: 50%;
+  }
+}
+.navFooter ul h2 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  color: #ff0000;
+  padding-bottom: 10px;
+}
+.navFooter ul a {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  padding-bottom: 10px;
+}
+.navFooter ul a:hover {
+  transform: scale(1.15);
+}
+
+.linhaFooter {
+  border: none;
+  height: 1px;
+  background-color: #f8f5f2;
+}
+
+footer {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 20 0;
+  padding: 0 50px 0 50px;
+}
+@media (max-width: 576px) {
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+footer nav img {
+  transition: transform 0.3s ease-in-out;
+}
+footer nav img:hover {
+  transform: scale(1.15);
+}
+
+#inicio,
+#sobreNos,
+#populares {
+  scroll-margin-top: 15vh;
+}/*# sourceMappingURL=style.css.map */

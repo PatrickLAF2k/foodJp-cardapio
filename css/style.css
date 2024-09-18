@@ -23,7 +23,7 @@ body {
   background-color: #ff0000;
   color: white;
   border: none;
-  font-size: 1, 25rem;
+  font-size: 1rem;
   font-family: Poppins;
 }
 .botao:hover {
@@ -257,8 +257,7 @@ header .navCabecario ul a {
   color: #232323;
   width: 80%;
 }
-
-.preco {
+.populares .preco {
   font-size: 1.5rem;
   font-family: "Koh Santepheap", sans-serif;
   font-weight: 500;
@@ -413,11 +412,178 @@ footer nav img:hover {
   transform: scale(1.15);
 }
 
+.headerCardapio {
+  display: flex;
+  width: 60vw;
+  height: 10vh;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8f2f2;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 576px) {
+  .headerCardapio {
+    width: 100%;
+    position: relative;
+    top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .headerCardapio img {
+    width: 50%;
+  }
+}
+
+.ramenCardapio {
+  border: #ff0000 dotted 1px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.ramenCardapio .ramenTxt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.ramenCardapio .ramenTxt h2 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  font-size: 2rem;
+}
+.ramenCardapio .ramenTxt p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 100%;
+}
+.ramenCardapio .ramenTxt .preco {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  width: 15%;
+}
+.ramenCardapio .ramenImg {
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+.ramenCardapio .ramenImg img {
+  width: 40%;
+  position: absolute;
+  transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+}
+.ramenCardapio .ramenImg img:nth-child(1) {
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}
+.ramenCardapio .ramenImg img:nth-child(2) {
+  top: 0;
+  left: 20%;
+  z-index: 3;
+}
+.ramenCardapio .ramenImg img:nth-child(3) {
+  top: 30%;
+  left: 40%;
+  z-index: 3;
+}
+.ramenCardapio .ramenImg img:hover {
+  transform: scale(1.2);
+  z-index: 10;
+}
+
+.kareCardapio {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+.kareCardapio img {
+  width: 30%;
+}
+.kareCardapio div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kareCardapio div h2 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  font-size: 2rem;
+}
+.kareCardapio div p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 100%;
+}
+.kareCardapio div .preco {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  width: 15%;
+}
+
+.daifukuCardapio {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+.daifukuCardapio img {
+  width: 30%;
+}
+.daifukuCardapio div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.daifukuCardapio div h2 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  font-size: 2rem;
+}
+.daifukuCardapio div p {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #232323;
+  width: 100%;
+}
+.daifukuCardapio div .preco {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  width: 15%;
+}
+
+.footerCardapio {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", sans-serif;
+  font-weight: 500;
+  color: #ff0000;
+  text-align: center;
+}
+
 #inicio,
 #sobreNos,
-#ramen,
-#kare,
-#daifuku,
 #populares {
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 15vh;
 }/*# sourceMappingURL=style.css.map */
