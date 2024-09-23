@@ -18,7 +18,6 @@ Este projeto é uma página inicial fictícia para um restaurante japonês, cria
 
 - **HTML**: Estruturação das páginas.
 - **SCSS**: Estilização com design responsivo e organizado.
-- **JavaScript**: Adição de interatividade.
 
 ## Estrutura do Projeto
 
@@ -28,7 +27,4 @@ Este projeto é uma página inicial fictícia para um restaurante japonês, cria
 - **`scss/`**: Arquivos de estilo SCSS, organizados por página.
   - `style.scss` para a página principal.
   - `styleCardapio.scss` para a página de cardápio.
-- **`css/`**: Arquivos CSS gerados a partir do SCSS.
   - `style.css` e `styleCardapio.css` correspondentes às suas páginas.
-- **`js/`**: Arquivo JavaScript para funcionalidades interativas.
-  - `script.js` .
