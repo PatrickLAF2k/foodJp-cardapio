@@ -1,24 +1,34 @@
-# Landing Page - Restaurante Japonês 
+# Landing Page - Restaurante Japonês
 
 ## Descrição
 
-Este projeto é uma página inicial fictícia para um restaurante japonês. A landing page foi criada para destacar a experiência culinária oferecida, com um design visualmente atraente e funcional.
+Este projeto é uma página inicial fictícia para um restaurante japonês, criado para demonstrar uma experiência culinária imersiva. O design visa ser visualmente atraente e funcional, com foco na navegação intuitiva e conteúdo bem estruturado.
 
 ## Funcionalidades
 
-- **Menu de Navegação Interativo**: 
-  - **Início**: Página principal com uma visão geral do restaurante.
-  - **Sobre Nós**: Informações sobre a história e a missão do restaurante.
-  - **Populares**: Destaque para os pratos mais pedidos, incluindo avaliações de clientes.
+- **Menu de Navegação Interativo**:
+  - **Início**: Apresenta uma visão geral do restaurante, destacando sua identidade.
+  - **Sobre Nós**: Seção dedicada à história, missão e valores do restaurante.
+  - **Cardápio**: Lista completa dos pratos oferecidos.
+  - **Populares**: Destaque dos pratos mais apreciados, com avaliações de clientes.
+
+- **Efeito de Zoom nas Imagens**: Ao passar o mouse sobre as imagens, elas se ampliam, criando uma experiência interativa.
 
 ## Tecnologias Utilizadas
 
-- HTML
-- SCSS
-- JavaScript (para funcionalidades interativas, se aplicável)
+- **HTML**: Estruturação das páginas.
+- **SCSS**: Estilização com design responsivo e organizado.
+- **JavaScript**: Adição de interatividade.
 
 ## Estrutura do Projeto
 
-- **`index.html`**: Estrutura principal da página.
-- **`styles.scss`**: Folhas de estilo para o design responsivo e estilização.
-- **`script.js`**: (Se aplicável) Funções JavaScript para interatividade.
+- **`index.html`**: Página inicial do projeto.
+- **`cardapio.html`**: Página dedicada ao cardápio do restaurante.
+- **`assets/`**: Pasta contendo imagens e outros recursos.
+- **`scss/`**: Arquivos de estilo SCSS, organizados por página.
+  - `style.scss` para a página principal.
+  - `styleCardapio.scss` para a página de cardápio.
+- **`css/`**: Arquivos CSS gerados a partir do SCSS.
+  - `style.css` e `styleCardapio.css` correspondentes às suas páginas.
+- **`js/`**: Arquivo JavaScript para funcionalidades interativas.
+  - `script.js` .
